@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>dhiya.com/contact</title>
   <meta name="description"
-    content="Hello there, I am Diya Eddine from Algeria, 17 years old. I am a web developer, designer, photographer, and artist. My versatile skills enable me to fuse creativity with technology, bringing unique projects to fruition..">
+    content="Hello there, wellcom to dhiya contact">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Dhiya2007/photo/main/ic.png" />
   <link rel="stylesheet" href="css/output.css" />
@@ -65,7 +65,7 @@
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="contact.html" class="font-signika text-2xl">CONTACT
+              <a href="index.html" class="font-signika text-2xl">CONTACT
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
@@ -81,32 +81,56 @@
         <div class="max-w-screen-md">
           <h1 class="text-4xl pt-10 pb-8"><b>CONTACT</b></h1>
 
-          <form class="space-y-8" action="mailto:dyaa.contact@gmail.com">
+          <form  class="space-y-8" target="_blank" action="https://formsubmit.co/dhiyamellouk@gmail.com" method="POST">
+
+
+  
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                 email</label>
-              <input type="email" id="email"
+              <input name="email" type="email" id="email"
                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="example@gmail.com" required />
+                                <div class="error-text">Email can't be blank</div>
+            </div>
+            <div>
+              <label for="name"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name</label>
+              <input name="name" type="text" id="name"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Your name .." required />
+                <div class="error-text">Name  can't be blank</div>
             </div>
             <div>
               <label for="subject"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-              <input type="text" id="subject"
+              <input name="subject" type="text" id="subject"
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="Let me know how I can help you" required />
+                <div class="error-text">Subject  can't be blank</div>
             </div>
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
                 message</label>
-              <textarea id="message" rows="6"
+              <textarea name="message" id="message" rows="6"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Leave a comment..." required></textarea>
+                                <div class="error-text">message can't be blank</div>
+                <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
             </div>
             <button type="submit"
               class="py-3 px-5 text-sm font-medium text-center bg-black dark:bg-white text-white dark:text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               Send message
             </button>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_cc" value="dhiyacont@gmail.com,dyaa.contact@gmail.com">
+   <input type="hidden" name="_next" value="https://dhiya2007.github.io/done/">
+
+
+
+   <input type="hidden" name="_template" value="table">
           </form>
         </div>
       </section>
@@ -182,7 +206,12 @@
     </div>
   </footer>
   <script src="js/fade_in.js"></script>
+  <script src="js/error.js"></script>
   <script src="js/menu.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
