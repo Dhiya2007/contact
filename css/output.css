@@ -343,7 +343,7 @@ Prevent resizing textareas horizontally by default.
 */
 
 textarea {
-  resize: vertical;
+  resize: none;
 }
 
 /*
@@ -1364,4 +1364,12 @@ video {
   margin-top: 10%;
   text-align:center;
   font-size: 2rem;
+}
+
+.error-text{
+  font-size: 14.5px;
+  color: #d93025;
+  text-align: left;
+  margin: 5px 10px 10px;
+  display: none;
 }
