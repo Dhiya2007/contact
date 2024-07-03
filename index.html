@@ -81,10 +81,23 @@
         <div class="max-w-screen-md">
           <h1 class="text-4xl pt-10 pb-8"><b>CONTACT</b></h1>
 
-          <form  class="space-y-8" target="_blank" action="https://formsubmit.co/dhiyamellouk@gmail.com" method="POST">
+          <form  class="space-y-8" action="https://api.web3forms.com/submit" method="POST" id="form">
 
-
+          <input type="hidden" name="access_key" value="a3ae840f-0d9b-4e02-b968-b4ab2b5e7275" />
   
+            <input type="hidden" name="subject" value="New Submission from dyaa.cont" />
+           
+           <input type="checkbox" name="botcheck" id="" style="display: none;" />
+            
+            <div>
+              <label for="name"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name</label>
+              <input name="name" type="text" id="name"
+                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                placeholder="Your name .." required />
+                <div class="error-text">Name  can't be blank</div>
+            </div>
+            
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                 email</label>
@@ -94,20 +107,12 @@
                                 <div class="error-text">Email can't be blank</div>
             </div>
             <div>
-              <label for="name"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your name</label>
-              <input name="name" type="text" id="name"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="Your name .." required />
-                <div class="error-text">Name  can't be blank</div>
-            </div>
-            <div>
-              <label for="subject"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-              <input name="subject" type="text" id="subject"
+              <label for="phone"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phone number</label>
+              <input type="text" name="phone" id="phone" placeholder="+213 777777777" required
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="Let me know how I can help you" required />
-                <div class="error-text">Subject  can't be blank</div>
+                <div class="error-text">phone  can't be blank</div>
             </div>
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
@@ -116,21 +121,15 @@
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Leave a comment..." required></textarea>
                                 <div class="error-text">message can't be blank</div>
-                <!-- Honeypot Spam Protection -->
-    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
             </div>
-            <button type="submit"
+            
+            <button type="submit" id="submit"
               class="py-3 px-5 text-sm font-medium text-center bg-black dark:bg-white text-white dark:text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
               Send message
             </button>
   
-            <input type="hidden" name="_cc" value="dhiyacont@gmail.com,dyaa.contact@gmail.com">
-   <input type="hidden" name="_next" value="https://dhiya2007.github.io/done/">
-
-
-
-   <input type="hidden" name="_template" value="table">
+          <p class="text-base text-center text-gray-400" id="result"></p>
+           <input type="hidden" name="redirect" value="https://dhiya2007.github.io/done/">
           </form>
         </div>
       </section>
@@ -208,10 +207,8 @@
   <script src="js/fade_in.js"></script>
   <script src="js/error.js"></script>
   <script src="js/menu.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
