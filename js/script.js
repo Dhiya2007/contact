@@ -25,6 +25,12 @@ form.addEventListener("submit", function (e) {
         result.innerHTML = json.message;
         result.classList.remove("text-gray-500");
         result.classList.add("text-green-500");
+
+        // Redirect to success page after 2 seconds
+        setTimeout(() => {
+          window.location.href = "https://dhiya2007.github.io/done/";
+        }, 500);
+
       } else {
         console.log(response);
         result.innerHTML = json.message;
@@ -43,5 +49,3 @@ form.addEventListener("submit", function (e) {
       }, 5000);
     });
 });
-
-
