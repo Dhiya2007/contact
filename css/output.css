@@ -58,6 +58,8 @@ body {
   margin: 0;
   /* 1 */
   line-height: inherit;
+  background-color: #121212; /* لون خلفية داكن */
+    color: #ffffff
   /* 2 */
 }
 
@@ -1208,7 +1210,7 @@ video {
 
   .dark\:bg-black {
     --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    background-color: #121212;
   }
 
   .dark\:bg-neutral-900 {
@@ -1444,4 +1446,10 @@ video {
   margin-top: 15px; /* تباعد البطاقة من العناصر الأخرى */
   text-align: center; /* محاذاة النص في وسط البطاقة */
   border-radius: 8px; /* حدود مدورة للبطاقة */
+}
+.link{
+ color: #0ef;
+}
+.text-text{
+  color: #b0b0b0
 }
