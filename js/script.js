@@ -46,6 +46,6 @@ form.addEventListener("submit", function (e) {
       form.reset();
       setTimeout(() => {
         result.style.display = "none";
-      }, 5000);
+      }, 4000);
     });
 });
