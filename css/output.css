@@ -1006,6 +1006,12 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+
+}
+.filde {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #0077FF;
 }
 
 .text-sm {
@@ -1429,4 +1435,13 @@ video {
   text-align: left;
   margin: 5px 10px 10px;
   display: none;
+}
+
+.result {
+  background-color: #f0f0f0; /* لون خلفية الرسالة */
+  border: 1px solid #ccc; /* حدود البطاقة */
+  padding: 15px; /* تباعد النص داخل البطاقة */
+  margin-top: 15px; /* تباعد البطاقة من العناصر الأخرى */
+  text-align: center; /* محاذاة النص في وسط البطاقة */
+  border-radius: 8px; /* حدود مدورة للبطاقة */
 }
